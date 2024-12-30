@@ -3,7 +3,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine("sqlite:///tasks.db")
+engine = create_engine("sqlite:///src/tasks.db")
 
 Base = declarative_base()
 
