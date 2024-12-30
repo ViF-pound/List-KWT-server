@@ -11,8 +11,8 @@ class Task(Base):
     __tablename__ = "tasks"
     
     id:Mapped[int] = mapped_column(primary_key = True)
-    name_task:Mapped[str]
     description_task:Mapped[str]
+    status_task:Mapped[str]
 
 Base.metadata.create_all(engine)
 
