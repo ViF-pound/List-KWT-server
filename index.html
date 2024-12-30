@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List-KWT</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>List-KWT</h1>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-label">Всего</span>
+                <span id="totalTasks" class="stat-value">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Активные</span>
+                <span id="activeTasks" class="stat-value">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Выполнено</span>
+                <span id="completedTasks" class="stat-value">0</span>
+            </div>
+        </div>
+
+        <form id="todoForm" class="todo-form">
+            <input type="text" id="todoInput" placeholder="Введите задачу..." required>
+            <button type="submit">Добавить</button>
+        </form>
+
+        <div class="filters">
+            <select id="sortSelect">
+                <option value="date">Сортировать по дате</option>
+                <option value="status">Сортировать по статусу</option>
+            </select>
+            <select id="filterSelect">
+                <option value="all">Все задачи</option>
+                <option value="active">Активные</option>
+                <option value="completed">Выполнено</option>
+            </select>
+        </div>
+
+        <div id="todoList" class="todo-list"></div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

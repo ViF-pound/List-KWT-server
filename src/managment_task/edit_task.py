@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from tasks_models import session_tasks
+from src.tasks_models import session_tasks
 
 edit_task_router = APIRouter()
 
